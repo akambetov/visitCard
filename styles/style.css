@@ -1,0 +1,136 @@
+@import 'normalize.css';
+/* google fonts 
+  Playfair Display SC - Bold 700
+  Roboto - Regular 400, Regular Italic 400, Bold 700
+  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* icon fonts */
+@import 'fonts-icon.css';
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  color: 	#A9A9A9;
+  background: url(../img/bg-dark.jpg)
+}
+header {
+  /* background-color: #32323Caa; */
+  background: rgba(51, 46, 128, .2);
+  margin-bottom: 15px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.nav-item {
+  padding: 10px 5px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #A9A9A9;
+}
+.nav-item:hover {
+  background-color: #fe9677ad;
+}
+
+/* main */
+section {
+  margin: 15px 0;
+  line-height: 1.5;
+  padding: 15px;
+}
+h1,h2 {
+  font-family: 'Playfair Display SC', serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fe9677ad;
+}
+h1 {
+  font-size: 1.7rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+img  {
+  width: 100%;
+}
+[class*='icon-'] {
+  color: #f64668;
+  margin-right: 3px;
+} 
+.icon-email,
+.icon-github{
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.list {
+  list-style-type: none;
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/*ссылка на "Вверх страницы"*/
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+/* media */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+  img {
+    width: 300px;
+    height: 357px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+  }
+  section:first-of-type {
+    padding: 0;
+  }
+  section:first-of-type h2{
+    text-align: left;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  header {
+    margin-bottom: 30px;
+  }
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container  {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
